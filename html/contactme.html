@@ -1,0 +1,90 @@
+<!------------------
+
+    Project 3
+    Name: Yuheng
+    Date: 2022-04-23
+    Description: The html is to create a contact me website of project3.
+
+-------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/contactmeform.js"></script>
+</head>
+<body>
+    <div id="headingcontainer">
+        <div id="navtitle">Yuheng | MY PROFILE</div>
+
+        <div id="headingnav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contactme.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="abouthead">
+        <h1>Contact Me</h1>
+    </div>
+
+    <form id="infoform">
+        <div id="left">
+            <ul>
+                <li>
+                    <label for="fullname">Full Name</label>
+                    <input id="fullname" name="fullname" type="text" />
+                    <p class="infoerror" id="fullname_error">* Required field</p>
+                </li>
+                <li>
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" />
+                    <p class="infoerror" id="phone_error">* Required field</p>
+                    <p class="infoerror" id="phoneformat_error">* Invalid phone number</p>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" />
+                    <p class="infoerror" id="email_error">* Required field</p>
+                    <p class="infoerror" id="emailformat_error">* Invalid email address</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="right">
+            <ul>
+                <li>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" maxlength="1000"></textarea>
+                    <p class="infoerror" id="message_error">* Required field</p>
+                </li>
+            </ul>
+
+            <div id="buttons">
+                <p>
+                    <button id="submit" type="submit">Submit</button>
+                    <button id="clearbutton" type="reset">Clear</button>
+                </p>
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <nav id="footernav">
+            <ul>
+                <li><a href="index.html">HOME</a>|</li>
+                <li><a href="about.html">ABOUT</a>|</li>
+                <li><a href="contactme.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+        <div id="footertxt">
+            <p>Copyright &copy; 2022  |  Designed With BY Yuheng Zhu</p>
+        </div>
+    </footer>
+</body>
+</html>
